@@ -1,3 +1,13 @@
+This is my "Mi Card" project as I followed the Udemy course, [The Complete 2020 Flutter Development Bootcamp with Dart](https://www.udemy.com/course/flutter-bootcamp-with-dart/).
+
+The background color is derived from the banner image.
+
+![Screenshot 1](https://github.com/cbh2000/flutterBusinessCardExample/raw/master/screenshots/simulatorScreenshot1.png) ![Screenshot 2](https://github.com/cbh2000/flutterBusinessCardExample/raw/master/screenshots/simulatorScreenshot2.png)
+
+---
+
+Original project readme:
+
 ![App Brewery Banner](https://github.com/londonappbrewery/Images/blob/master/AppBreweryBanner.png)
 
 # Mi Card
