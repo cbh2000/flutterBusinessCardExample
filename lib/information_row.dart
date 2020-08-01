@@ -1,18 +1,11 @@
 import 'package:flutter/material.dart';
 
-class InformationRowData {
-  final IconData icon;
-  final String text;
-  final Function onTap;
-  InformationRowData({this.icon, this.text, this.onTap});
-}
-
 class InformationRow extends StatelessWidget {
   final IconData icon;
   final String text;
   final Function onTap;
 
-  const InformationRow({
+  InformationRow({
     @required this.icon,
     @required this.text,
     this.onTap, // OPTIONAL

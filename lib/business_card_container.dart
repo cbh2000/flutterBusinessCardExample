@@ -31,26 +31,26 @@ class BusinessCardContainerState extends State {
               backgroundImage: NetworkImage(myInfo.backgroundImage),
               profileImage: NetworkImage(getProfileImageURI(myInfo.email)),
               title: myInfo.name,
-              messages: [
-                InformationRowData(
+              information: [
+                InformationRow(
                   icon: Icons.business,
                   text: myInfo.role,
                 ),
-                InformationRowData(
+                InformationRow(
                   icon: Icons.phone,
                   text: myInfo.phone,
                   onTap: () {
                     callPhoneNumber(myInfo.phone);
                   },
                 ),
-                InformationRowData(
+                InformationRow(
                   icon: Icons.email,
                   text: myInfo.email,
                   onTap: () {
                     sendEmailTo(myInfo.email);
                   },
                 ),
-                InformationRowData(
+                InformationRow(
                   icon: Icons.access_time,
                   text: myInfo.schedule,
                 ),

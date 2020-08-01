@@ -8,14 +8,14 @@ class BusinessCard<BackImageProvider, ProfImageProvider>
   final ImageProvider<BackImageProvider> backgroundImage;
   final ImageProvider<ProfImageProvider> profileImage;
   final String title;
-  final List<InformationRowData> messages;
+  final List<InformationRow> information;
 
   BusinessCard({
     this.backgroundColor = Colors.white,
     this.backgroundImage,
     this.profileImage,
     this.title,
-    this.messages,
+    this.information,
   });
 
   @override
@@ -85,7 +85,7 @@ class BusinessCard<BackImageProvider, ProfImageProvider>
                       ),
                     ),
                     Column(
-                      children: makeWidgetsFor(messages),
+                      children: information,
                     ),
                   ],
                 ),
@@ -95,19 +95,5 @@ class BusinessCard<BackImageProvider, ProfImageProvider>
         ),
       ),
     );
-  }
-
-  List<Widget> makeWidgetsFor(List<InformationRowData> messages) {
-    var list = List<Widget>();
-    for (InformationRowData message in messages) {
-      list.add(
-        InformationRow(
-          icon: message.icon,
-          text: message.text,
-          onTap: message.onTap,
-        ),
-      );
-    }
-    return list;
   }
 }
